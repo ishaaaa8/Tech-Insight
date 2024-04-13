@@ -10,7 +10,7 @@ export const verifyToken = (req, res, next) => {
       return next(errorHandler(401, 'Unauthorized'));
     }
     if(!user.isAdmin){
-        return next(errorHandler(403,'not known'));
+        return next(errorHandler(403,'You are not an admin'));
     }
     req.user = user;
     next();
