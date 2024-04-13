@@ -7,6 +7,7 @@ import { deleteUser } from '../controllers/user.controller.js';
 import { signout } from '../controllers/user.controller.js';
 import { getUsers } from '../controllers/user.controller.js';
 
+
 router.get('/test', test);
 router.put('/update/:userId',verifyToken,updateUser);
 router.delete('/delete/:userId',verifyToken,deleteUser);
