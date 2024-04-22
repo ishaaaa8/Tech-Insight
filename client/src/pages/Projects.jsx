@@ -1,19 +1,14 @@
-import React from 'react';
-
 export default function Projects() {
   return (
-    <div className='min-h-[500px] text-cyan-600 p-3'>
+    <div className='min-h-[500px] max-w-2xl mx-auto flex justify-center items-center flex-col gap-6 p-3'>
+      <h1 className='text-3xl font-semibold'>Projects</h1>
+      
       <a
         href='https://www.100jsprojects.com'
         target='_blank'
         rel='noopener noreferrer'
-      >
-        Click to create and learn using  
-        <span className='text-cyan-900 t'>
-        100 JS Projects
-        </span>
-      
-      </a>
+        className='text-md font-semibold text-cyan-900 '
+      >Click to build fun and engaging projects while learning HTML, CSS, and JavaScript! </a>
     </div>
-  );
+  )
 }
